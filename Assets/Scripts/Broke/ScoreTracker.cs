@@ -14,7 +14,7 @@ namespace Broke
             distribuitor.scoreUpdated += UpdateScore;
         }
 
-        private void UpdateScore(String type)
+        private void UpdateScore(object sender, string type)
         {
             if (type.CompareTo("red") == 0) score.Red++;
             else if(type.CompareTo("green") == 0) score.Green++;
