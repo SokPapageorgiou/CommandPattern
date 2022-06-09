@@ -11,9 +11,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W)) _executer.Enqueue(new MoveUp(gameObject));
-        if(Input.GetKeyDown(KeyCode.A)) _executer.Enqueue(new MoveLeft(gameObject));
-        if(Input.GetKeyDown(KeyCode.S)) _executer.Enqueue(new MoveDown(gameObject));
-        if(Input.GetKeyDown(KeyCode.D)) _executer.Enqueue(new MoveRight(gameObject));
+        if(Input.GetKeyDown(KeyCode.W)) _executer.Enqueue(new MoveDirection(gameObject, Vector3.up));
+        if(Input.GetKeyDown(KeyCode.A)) _executer.Enqueue(new MoveDirection(gameObject, Vector3.left));
+        if(Input.GetKeyDown(KeyCode.S)) _executer.Enqueue(new MoveDirection(gameObject, Vector3.down));
+        if(Input.GetKeyDown(KeyCode.D)) _executer.Enqueue(new MoveDirection(gameObject, Vector3.right));
     }
 }
