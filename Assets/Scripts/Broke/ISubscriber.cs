@@ -1,6 +1,9 @@
-public interface ISubscriber
+namespace Broke
 {
-    public void Subscribe();
-    public void Unsubscribe();
-    public void Update();
+    public interface ISubscriber
+    {
+        public void Subscribe();
+        public void Unsubscribe();
+        public void Update();
+    }
 }

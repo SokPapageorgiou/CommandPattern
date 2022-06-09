@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IPublisher
+namespace Broke
 {
-    public void Publish();
+    public interface IPublisher
+    {
+        public void Publish(string color);
+    }
 }
